@@ -1,0 +1,13 @@
+name: server_goat
+version: 0.1.0
+
+authors:
+  - Lampros Chaidas <lampros@chaidas.com>
+
+targets:
+  server_goat:
+    main: src/server_goat.cr
+
+crystal: 1.8.1
+
+license: MIT
