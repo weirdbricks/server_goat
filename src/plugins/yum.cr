@@ -20,7 +20,7 @@ module YUM
       # we convert the string to an array by splitting on new lines
       command_output = command_output.split("\n")
       # any empty lines should be removed as well as lines that we don't need from the array
-      command_output.reject!{ |line| line.empty? || line.starts_with?("Repo") || line.starts_with?("Matched from:") || line.starts_with?("Provide") || line.starts_with?("Last metadata expiration check") }
+      command_output.reject! { |line| line.empty? || line.starts_with?("Repo") || line.starts_with?("Matched from:") || line.starts_with?("Provide") || line.starts_with?("Last metadata expiration check") }
       # what's left should be the package name - it will look like this:
       # "mysql-8.0.30-1.module_el8.6.0+3340+d764b636.x86_64 : MySQL client programs and shared libraries"
       # so we split on " : " and keep only the first part which is the real package name
@@ -81,5 +81,4 @@ module YUM
       end
     end
   end
-
 end
