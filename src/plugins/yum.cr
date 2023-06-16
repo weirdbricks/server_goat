@@ -1,11 +1,11 @@
 require "../common_functions.cr"
 
 module YUM
-  extend self
+  extend self 
 
-  unless command_in_our_path?("yum")
-    abort "yum not found"
-  end
+#  unless command_in_our_path?("yum")
+#    abort "yum not found"
+#  end
 
   # returns true if the package is already installed
   # returns false if the package is not installed

@@ -4,15 +4,10 @@ version: 0.1.0
 authors:
   - Lampros Chaidas <lampros@chaidas.com>
 
-development_dependencies:
-  ameba:
-    github: crystal-ameba/ameba
-    version: ~> 1.4.0
-
 targets:
   server_goat:
     main: src/server_goat.cr
 
-crystal: 1.8.1
+crystal: 1.8.2
 
 license: MIT
